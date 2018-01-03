@@ -4,8 +4,12 @@ This is a programs which fetches prices from various cryptocurrency exchanges an
 
 Currently requries the following packages which can be installed via:
 
-pip install networkx 
+>pip install networkx
+>pip install gdax
 
-pip install gdax
+
+Run using:
+>python arbitrage.py
+
 
 
