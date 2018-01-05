@@ -11,6 +11,10 @@ def add_pair(graph, cur1, cur2, cur1_to_cur2):
     return graph
 
 
+def add_pair_w_inverse(graph, cur1, cur2, cur1_to_cur2):
+    graph[cur1][cur2] = cur1_to_cur2
+    graph[cur2][cur1] = 1 / cur1_to_cur2
+    return graph
 
 
 def print_arb(graph, dict, cycles):
