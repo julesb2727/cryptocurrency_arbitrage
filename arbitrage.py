@@ -11,10 +11,6 @@ def add_pair(graph, cur1, cur2, cur1_to_cur2):
     return graph
 
 
-def add_pair_w_inverse(graph, cur1, cur2, cur1_to_cur2):
-    graph[cur1][cur2] = cur1_to_cur2
-    graph[cur2][cur1] = 1 / cur1_to_cur2
-    return graph
 
 
 def print_arb(graph, dict, cycles):
@@ -61,7 +57,6 @@ def get_gdax_prices(client):
 
 public_client = gdax.PublicClient()
 prices = get_gdax_prices(public_client)
-
 
 num_currencies = 5
 graph = np.eye(num_currencies)
